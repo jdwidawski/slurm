@@ -5,18 +5,15 @@
 
 IFS=" "
 
-if [ ! -d "results" ]
+if [ ! -d "no_xargs_results" ]
 then
-	mkdir results
+	mkdir no_xargs_results
 fi
 
 for file in ./references/sequence*
 do
 	file_no_path="${file##*/}"
 	echo "Received file: $file_no_path"
-	bwa index -p ./results/${file_no_path%.*} $file 2>/dev/null;
+	bwa index -p ./no_xargs_results/${file_no_path%.*} $file 2>/dev/null;
 done
-
-wait
-rm -r *results*
 

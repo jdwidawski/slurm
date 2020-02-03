@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=mpi_prime      # Job name
-#SBATCH --output=2n2t1c.out     # Standard output and error log
+#SBATCH --output=2n2t1c.out     # Example output file name
 #SBATCH --partition=research.q
 #SBATCH --nodes=2
 #SBATCH --ntasks=2

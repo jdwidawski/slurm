@@ -2,7 +2,7 @@
 #SBATCH --job-name=kuba
 #SBATCH --partition=research.q
 #SBATCH --nodes=1
-#SBATCH --output=kuba_slurm_out
+#SBATCH --output=kuba_slurm.out
 
 # write string to file
 echo "I have submitted a script" > text.txt

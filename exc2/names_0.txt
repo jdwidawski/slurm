@@ -1,3 +1,1 @@
-Apple
-Orange
-Banana
+Apple Banana Orange
