@@ -1,1 +1,3 @@
-Bread Milk Rice
+Rice
+Bread
+Milk
