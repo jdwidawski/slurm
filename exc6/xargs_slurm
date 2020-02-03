@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=xargs
+#SBATCH --partition=research.q
+#SBATCH --output=xargs_slurm.out
+# name fasta files as sample{i}.fasta
+# use xargs bwa index
+
+mkdir results
+echo -e "1\n2\n3" | xargs -n 1 -P 3 -I {} bash -c "echo 'Received file: sequence{}.fasta'; bwa index -p ./results/sequence{} ./references/sequence{}.fasta 2>/dev/null;"
+wait
+rm -r *result*

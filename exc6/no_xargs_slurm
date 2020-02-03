@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=no_xargs
+#SBATCH --partition=research.q
+#SBATCH --output=no_xargs_slurm.out
+
+IFS=" "
+
+if [ ! -d "results" ]
+then
+	mkdir results
+fi
+
+for file in ./references/sequence*
+do
+	file_no_path="${file##*/}"
+	echo "Received file: $file_no_path"
+	bwa index -p ./results/${file_no_path%.*} $file 2>/dev/null;
+done
+
+wait
+rm -r *results*
+

@@ -1,0 +1,38 @@
+aolin23.uab.es
+Sat Feb  1 23:39:08 CET 2020
+Running prime number generator program on 2 nodes with 2 tasks, each with 2 cores.
+01 February 2020 11:39:12 PM
+
+PRIME_MPI
+  C/MPI version
+
+  An MPI example program to count the number of primes.
+  The number of processes is 2
+
+         N        Pi          Time
+
+         1         0        0.006084
+         2         1        0.000173
+         4         2        0.000148
+         8         4        0.000173
+        16         6        0.000143
+        32        11        0.000155
+        64        18        0.000137
+       128        31        0.000152
+       256        54        0.000173
+       512        97        0.000293
+      1024       172        0.000617
+      2048       309        0.001929
+      4096       564        0.006659
+      8192      1028        0.021825
+     16384      1900        0.065197
+     32768      3512        0.162618
+     65536      6542        0.530293
+    131072     12251        1.995300
+    262144     23000        7.757183
+
+PRIME_MPI - Master process:
+  Normal end of execution.
+
+01 February 2020 11:39:23 PM
+Sat Feb  1 23:39:23 CET 2020
