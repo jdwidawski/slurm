@@ -1,6 +1,4 @@
-
-# Assignment for MSc Bioinformatics
-### Improve Bash/Python code performance with The Slurm Workload Manager, an open source job schedule manager and running on a cluster.
+# Improve Bash/Python code performance with The Slurm Workload Manager, an open source job schedule manager and running on a cluster.
 
 
 ## Excercise 1
